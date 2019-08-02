@@ -1,6 +1,9 @@
 import os
 import bpy
 
+version = bpy.app.version
+assert version[0] == 2 and version[1] == 80, \
+    f"This script is developed for Blender version 2.80. Currently running: {version[0]}.{version[1]}.{version[2]}"
 
 def clean_scene():
     bpy.ops.object.select_all(action='SELECT')
@@ -9,8 +12,8 @@ def clean_scene():
 def draw_base_plate():
 
     # cubes for cutting sides of base plate    
-    bpy.ops.mesh.primitive_cube_add(radius=0.05, location=(0.175,0,0.09))
-    bpy.ops.mesh.primitive_cube_add(radius=0.05, location=(-0.175,0,0.09))
+    bpy.ops.mesh.primitive_cube_add(size=0.05, location=(0.175,0,0.09))
+    bpy.ops.mesh.primitive_cube_add(size=0.05, location=(-0.175,0,0.09))
 
     # base plate
     bpy.ops.mesh.primitive_cylinder_add(radius=0.15,depth=0.005, location=(0,0,0.09))
@@ -30,7 +33,7 @@ def draw_base_plate():
     # deselect cylinder and delete cubes
     bpy.ops.object.select_pattern(pattern="Cube")
     bpy.ops.object.select_pattern(pattern="Cube.001")
-    bpy.data.objects['Cylinder'].select = False
+    bpy.data.objects['Cylinder'].select_set(state=False)
     bpy.ops.object.delete(use_global=False)
     
 
@@ -68,7 +71,7 @@ def draw_motors_and_wheels():
     bpy.ops.mesh.primitive_cylinder_add(radius=0.015,depth=0.05, location=(0,-0.125,0.065))
     
     # Kinect
-    bpy.ops.mesh.primitive_cube_add(radius=0.04, location=(0,0,0.26))    
+    bpy.ops.mesh.primitive_cube_add(size=0.04, location=(0,0,0.26))    
     
 # middle plate
 def draw_middle_plate():
