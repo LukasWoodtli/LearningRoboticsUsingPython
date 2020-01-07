@@ -1,0 +1,12 @@
+Part;Amount;Notes;Recomended (1st Edition);Recomended (2nd Edition);Buy;Order
+Motors with Encoders;2;;http://www.pololu.com/product/1447;http://www.pololu.com/product/2827;https://www.pololu.com/product/4756;Ok
+Mounting hub;2-Pack;;http://www.pololu.com/product/1083;Same;Same;Ok
+L-bracket;1 Pair;;http://www.pololu.com/product/1084;Same;Same;Ok
+Wheels 90 mm;1 Pair;;-;http://www.pololu.com/product/1438;Same;Ok
+Caster Wheel;2;Diameter 3 cm;http://www.pololu.com/category/45/pololu-ball-casters;;https://www.pololu.com/product/2692;Ok
+Motor Driver;1;VNH2SP30 Motor Driver MD03A;http://www.pololu.com/product/708;Same;https://www.pololu.com/product/2507;Ok
+Level Shifter;2 (5 channels);3.3 V to 5 V;https://www.sparkfun.com/products/12009;;https://www.play-zone.ch/de/play-zone-logic-level-converter-bi-directional.html;Ok
+Ultrasonic Sensor;1;HC-SR04;;Same;https://www.play-zone.ch/de/ultraschall-distanzmesser-hc-sr04.html;Ok
+IMU;1;MPU 6050;;Same;https://www.play-zone.ch/de/mpu-6050-accelerometer-gyro.html;Ok
+Embedded controller board;1;Tiva C LaunchPad (Or Arduino);http://www.ti.com/tool/EK-TM4C123GXL;Same;;
+Halter;1;;;;https://www.play-zone.ch/de/pla-halter-fur-hc-sr04-module.html;
